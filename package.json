@@ -1,0 +1,23 @@
+{
+  "name": "loopa-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The LOOPA handbook: searchable, responsive static documentation.",
+  "scripts": {
+    "dev": "node docs-site/serve.mjs --watch",
+    "build": "node docs-site/build.mjs",
+    "preview": "node docs-site/serve.mjs",
+    "test": "playwright test --config playwright.docs.config.ts",
+    "docs:dev": "node docs-site/serve.mjs --watch",
+    "docs:build": "node docs-site/build.mjs",
+    "docs:preview": "node docs-site/serve.mjs",
+    "docs:test": "playwright test --config playwright.docs.config.ts"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "marked": "18.1.1"
+  }
+}

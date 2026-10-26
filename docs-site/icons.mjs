@@ -1,0 +1,22 @@
+const paths = {
+  orbit: '<ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(-40 12 12)"/><circle cx="12" cy="12" r="2"/>',
+  terminal: '<rect x="3" y="4" width="18" height="16" rx="3"/><path d="m7 9 3 3-3 3m6 0h4"/>',
+  compass: '<circle cx="12" cy="12" r="9"/><path d="m16 8-3 5-5 3 3-5z"/>',
+  layers: '<path d="m12 3 10 5-10 5L2 8zm-10 9 10 5 10-5M2 16l10 5 10-5"/>',
+  database: '<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/>',
+  code: '<path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-16-2 20"/>',
+  tool: '<path d="m14 6 4 4 3-3a7 7 0 0 1-9 9l-5 5a3 3 0 0 1-4-4l5-5a7 7 0 0 1 9-9z"/>',
+  rocket: '<path d="M14 5c3-3 7-3 7-3s0 4-3 7l-7 7-5-5zM6 11l-4 1 4-6h7m-2 10-1 6 6-4v-7M6 16l-3 5 5-3"/><circle cx="16" cy="7" r="1.5"/>',
+  book: '<path d="M12 5C9 3 5 3 2 4v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1zm0 0v15"/>',
+  info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/>',
+  arrow: '<path d="M4 12h16m-6-6 6 6-6 6"/>',
+  external: '<path d="M14 3h7v7m0-7L10 14M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/>',
+  search: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 1v2m0 18v2M1 12h2m18 0h2M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/>',
+  menu: '<path d="M4 6h16M4 12h16M4 18h16"/>',
+  close: '<path d="m6 6 12 12M6 18 18 6"/>',
+  copy: '<rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/>',
+  check: '<path d="m4 12 5 5L20 6"/>',
+  github: '<path d="M9 20c-5 1-5-2-7-2m14 4v-4c0-1-.3-2-1-2 4-.5 6-2 6-6 0-1-.4-2-1-3 0-1 0-2-.5-3-2 0-3 1-4 1-2-.6-4-.6-6 0-1 0-2-1-4-1-.5 1-.5 2-.5 3-.6 1-1 2-1 3 0 4 2 5.5 6 6-.7.7-1 1.5-1 3v3"/>',
+};
+export const icon = (name, className = "") => `<svg class="icon ${className}" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] ?? paths.book}</svg>`;
